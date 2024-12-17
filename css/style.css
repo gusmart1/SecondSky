@@ -1,0 +1,196 @@
+@font-face {
+  font-family: 'RobotoThinItalic';
+  src:url("../fonts/Roboto-ThinItalic.ttf");
+}
+@font-face {
+  font-family: 'RobotoRegular';
+  src:url("../fonts/Roboto-Regular.ttf");
+}
+ 
+/* sidebar*/
+
+.sidebar
+{
+  background : #FFFFFF;
+  position : fixed ;
+  left : 0px;
+  top : 0px;
+  width : 260px;
+  height : 100%;
+}
+
+
+.sidebar a {
+  background-color: white; 
+  color: black; 
+  display: block;
+  padding: 16px; 
+  text-decoration: none; 
+  font-family:RobotoRegular ;
+  font-size: 20px;
+  margin-left: 8px;
+}
+
+.sidebar a:hover {
+  color: blue;
+}
+
+.sidebar a.active {
+  background-color: white; 
+  color: blue;
+}
+
+.sidebar .italic {
+	font-family: RobotoThinItalic;
+	font-size: 20px;
+}
+
+.container {
+	width: 100vw;
+	height: auto;
+}
+
+.home { 
+	height: 1400px;
+	width: 100vw;
+	background: url("../images/hero.jpg")  no-repeat;
+	background-size: cover;
+	background-position-x: 25px;
+  background-attachment: fixed;
+}
+
+
+.title {
+font-family: RobotoThinItalic;
+font-size: 200px;
+text-align: right;
+color: white;
+width: 704px;
+height: 384px;
+position: absolute;
+top: 200px;
+right:60px;
+}
+
+.artist {
+font-family: RobotoThinItalic;
+font-size: 60px;
+text-align: right;
+line-height: 180px;
+color: white;
+position: absolute;
+top: 90px;
+right:60px;
+}
+
+
+.info {
+font-family: RobotoThinItalic;
+font-size: 24px;
+text-align: left;
+color: white;
+position: absolute;
+bottom: 20px;
+left:290px;
+}
+
+.info_area {
+  background-color: white;
+  height: 600px;
+  width: 1200px;
+  position: absolute;
+  top: 800px;
+  right: 0px;
+}
+
+.about {
+font-family: RobotoRegular;
+font-size: 36px;
+text-align: left;
+color: black;
+position: absolute;
+top: 830px;
+left:852px;
+right: 20px;
+z-index: 1;
+}
+
+
+.stage {
+background: url("../images/stage.jpg")  no-repeat;
+background-size: contain;
+position: absolute;
+top: 830px;
+left: 280px;
+width: 46%;
+height: 46%;
+}
+
+.buy {
+  width: 900px;
+  height: 78px;
+  background-color: blue;
+  color: white;
+  position: absolute;
+  left:400px;
+  top: 1220px;
+  text-align: center;
+  font-family: RobotoRegular;
+  font-size: 80px;
+  text-align:
+
+
+}
+
+/*grid*/
+
+.grid-container {
+  display: grid;
+  width: fill;
+  height: fill;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 60px;
+  grid-auto-rows: repeat(3, 1fr);
+  grid-row-gap: 60px;
+  position: absolute;
+  left: 392px;
+  top: 80px;
+  font-family: RobotoRegular;
+  font-size: 20px;
+  text-align: center;
+}
+
+.grid-item {
+  display: flex;
+  width: 184px;
+  height: 560px;
+  padding-bottom: 2.5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner {
+  display: flex;
+  width: 156px;
+  height: 28px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+
+/*background*/
+
+body {
+  background-color: #EFF2FF;
+}
+
